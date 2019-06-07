@@ -206,18 +206,13 @@ img{
 /*pad&sp*/
 
 @media screen and (max-width:1199px ){
-  .header{
-    position: sticky;
-    top:0;
-    width: 100%;
-    z-index: 2;
-  }
+  
   .iphone__box {
     display: block;
     padding-top: 50px;
   }
   .inner__iphone {
-    padding-left: 0;
+    margin-left: 0;
   }
   .header__iphone{
     margin: 0 auto;
