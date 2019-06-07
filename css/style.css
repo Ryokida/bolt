@@ -29,13 +29,13 @@ img{
   padding:  14px 12px;
   font-size: 12px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 .header__icon__sp {
   display: none;
 }
 .header__icon__pc:hover {
   color: #333;
-  transition: color 0.3s;
 }
 .header{
   position: sticky;
@@ -86,10 +86,12 @@ img{
 .article__gridbox{
   background-color: #f2f2f2;
 }
+.gridbox__all{
+  padding-top:60px;
+  padding-bottom: 70px;
+}
 .header__article {
   font-size: 24px;
-  margin-bottom: 40px;
-  padding-top: 60px;
 }
 .grid__list{
   display: flex;
@@ -100,11 +102,13 @@ img{
 }
 .grid__list>li{
   margin-right: 100px;
-  opacity: 0.7;
 }
-.grid__list>li:hover {
-  opacity: 1;
+.hover__grid{
+  opacity: 0.7;
   transition: all 0.3s;
+}
+.hover__grid:hover {
+  opacity: 1;
 }
 .grid__list>li:nth-child(3n) {
   margin-right: 0;
@@ -116,7 +120,6 @@ img{
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  padding-bottom: 70px;
 }
 .email__box {
   background-color: #74cfae;
@@ -124,10 +127,10 @@ img{
   padding: 14px 12px;
   margin-left: 90px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 .email__box:hover {
   color: #333;
-  transition: color 0.3s;
 }
 .grid__text {
   font-size: 15px;
@@ -139,15 +142,13 @@ img{
 }
 .select__box {
   display: block;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 .header__select {
   color: #fff;
   font-size: 24px;
-  padding-top: 70px;
   margin-bottom: 50px;
-}
-.select__box__content{
-  padding-bottom: 100px;
 }
 .select__content {
   display: flex;
@@ -184,11 +185,11 @@ img{
   width: 185px;
   padding-top: 45px;
   padding-bottom: 45px;
+  transition: all 0.3s;
 }  
 .hover__sns:hover {
   background-color: #fff;
   opacity: 1;
-  transition: all 0.3s;
 }
 /*ここからfooter*/
 .footer{
@@ -196,11 +197,11 @@ img{
 }
 .footer__inner{
   text-align: right;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 .footer__text{
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 25px;
 }
 
 /*pad&sp*/
@@ -217,6 +218,10 @@ img{
   .header__iphone{
     margin: 0 auto;
     padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .title__iphone
+  .text__iphone{
     padding-bottom: 25px;
   }
   .grid__list>li {
