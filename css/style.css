@@ -211,28 +211,31 @@ img{
   .iphone__box {
     display: block;
     padding-top: 50px;
+    padding-bottom: 25px;
   }
   .inner__iphone {
     margin-left: 0;
+    margin-top:20px;
   }
-  .header__iphone{
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 25px;
+  .header__article{
+    margin-bottom: 40px;
   }
-  .title__iphone
-  .text__iphone{
-    padding-bottom: 25px;
-  }
-  .grid__list>li {
-    display: block;
+  .grid__list {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding-top: 0px;
   }
-  .grid__list>li:nth-child(3n) {
-    margin-right: auto;
-    }
-  .inner__grid__afterbox {
+  .grid__list>li {
+    margin-right: 0;
+  }
+  .grid__list>li:nth-child(n+4) {
+    margin-top: 0;
+  }
+  .grid__list>li:nth-child(4) {
+    margin-top: 80px;
+  } 
+  .grid__afterbox {
     display: block;
     margin-top: 80px;
   }
@@ -242,38 +245,36 @@ img{
   }
   .grid__text {
     margin: 0 auto;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     width: auto;
     }
   .select__content {
     display: block;
   }
   .select__content>li {
-    padding-left: 0;
-    padding-bottom: 88px;
+    margin-left: 0;
+    margin-bottom: 88px;
   }
-}
-/*pad*/
-@media screen and (min-width: 768px) and (max-width:1199px ) {
+  .select__content>li:last-child{
+    margin-bottom: 0;
+  }
 
-.grid__list>li:nth-child(4) {
-  padding-top: 80px;
-} 
-}
+/*pad
+@media screen and (min-width: 768px) and (max-width:1199px ) {
+  .grid__list>li:nth-child(4) {
+    margin-top: 80px;
+  }
+}*/
 /*sp*/
 @media screen and (max-width: 767px) {
-
-  .title__inner {
-    padding-top: 160px;
-  }
   .header__icon__pc {
     display: none;
   }
   .header__icon__sp{
     display: block;
     width: 43px;
-    border: 1PX solid #000;
-    border-radius: 3PX;
+    border: 1px solid #ddd;
+    border-radius: 4px;;
     float: right;
     box-sizing: border-box;
     padding: 10px;
@@ -281,19 +282,24 @@ img{
   .icon{
     display: block;
     height: 2px;
-    background-color: #556;
+    background-color: #ddd;
     margin-right: 0px;
     margin-bottom: 4px;
     box-sizing: border-box;
     }
-  .icon:last-child{
+  .icon:last-child {
     margin-bottom: 0;
+  }
+  .title__inner {
+    padding-top: 160px;
+    padding-bottom: 130px;
   }
   .main__text {
     font-size: 80px;
   }
-  .main__text::after {
-    padding-bottom: 130px;
+  .main__subtext { 
+    margin-top:20px;
+    font-size: 30px;
   }
   .sns__icon{
     flex-direction: column;
@@ -302,8 +308,6 @@ img{
   }
   .hover__sns{
     width: 100%;
-    padding-top: 45px;
-    padding-bottom: 45px;
   }
 }
-  
+}
