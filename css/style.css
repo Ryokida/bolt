@@ -227,6 +227,7 @@ img{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 80px;
     padding-top: 0px;
   }
   .grid__list>li {
@@ -237,7 +238,10 @@ img{
   }
   .grid__list>li:nth-child(3n) {
     margin-bottom: 80px;
-  } 
+  }
+  .grid__list>li:last-child{
+    margin-bottom: 0;
+  }
   .grid__afterbox {
     margin-top:0;
     display: block;
