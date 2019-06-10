@@ -235,8 +235,8 @@ img{
   .grid__list>li:nth-child(n+4) {
     margin-top: 0;
   }
-  .grid__list>li:nth-child(4n) {
-    margin-top: 80px;
+  .grid__list>li:nth-child(3n) {
+    margin-bottom: 80px;
   } 
   .grid__afterbox {
     display: block;
