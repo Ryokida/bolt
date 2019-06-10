@@ -208,6 +208,9 @@ img{
 
 @media screen and (max-width:1199px ){
   
+  .inner {
+    width: 97%;
+  }
   .iphone__box {
     display: block;
     padding-top: 50px;
@@ -232,7 +235,7 @@ img{
   .grid__list>li:nth-child(n+4) {
     margin-top: 0;
   }
-  .grid__list>li:nth-child(4) {
+  .grid__list>li:nth-child(4n) {
     margin-top: 80px;
   } 
   .grid__afterbox {
@@ -261,12 +264,10 @@ img{
 
 /*pad
 @media screen and (min-width: 768px) and (max-width:1199px ) {
-  .grid__list>li:nth-child(4) {
-    margin-top: 80px;
-  }
 }*/
 /*sp*/
 @media screen and (max-width: 767px) {
+  
   .header__icon__pc {
     display: none;
   }
